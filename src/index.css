@@ -1,13 +1,83 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-color: blueviolet;
+}
+
+.container {
+  border-radius: 5px;
+  background: white;
+
+  width: 400px;
+  padding: 10px 30px 30px 30px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.items {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px 0;
+  border-top: 1px solid black;
+  position: relative;
+}
+
+img {
+  object-fit: cover;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin: 0 20px;
+}
+
+h3 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+
+.btn-clear {
+  width: 100%;
+  height: 50px;
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.btn-delete {
+  position: absolute;
+  color: white;
+  background-color: rgba(137, 43, 226, 0.67);
+  right: 0;
+  border: none;
+  padding: 8px;
+  border-radius: 2px;
+  text-align: center;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+button:hover {
+  cursor: pointer;
 }
